@@ -1,42 +1,276 @@
+
+.navbar{
+  background-color:white;
+}
+.btn{
+  border-radius:50px;
+}
+.trial{
+  padding-left:15%;
+  padding-right:15%
+}
+.text{
+ 
+  font-size:50px;
+  font-family: 'Abril Fatface';
+  font-weight: bolder;
+}
+.dropdown-item{
+  color:black;
+}
+.dropdown-menu{
+  background-color:white;
+}
+.thought{
+  margin-top: 80px;
+}
+.img-bg{
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  height:100%;
+}
+#what{
+  font-weight:bolder;
+}
+.d-flex{
+  align-content:center;
+}
+.coversection {
+  align-items:center;
+    background: #fff;
+    box-shadow: 0 5px 20px rgb(86 124 173 / 16%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 350px;
+    max-width: 100%;
+}
+.abcdef{
+  font-weight:bolder;
+}
+#about{
+  background-color:white;;
+}
+.image{
+  max-height: 100px;
+    max-width: 100px;
+    margin:0 auto 10px;
+    border-radius: 50%;
+    background-color: #ff8126;
+}
+i{
+  color:black;
+}
+#icons{
+  height:100%;
+  
+}
+.apply {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    left:45%;
+}
+.tutor-info{
+  margin-top:30px;
+}
+
+.back-ground{
+  background-image: url('images/teabg.jpg');
+  background-size: cover;
+  height:100%;
+}
+
+.get-started{
+  font-size: 20px;
+  padding-left:25%;
+  padding-right:25%;
+  background-color: #d0c2f7;
+}
+.teach{
+  margin-top: 10%;
+ 
+}
+.pop{
+  font-family: 'Abril Fatface';
+
+}
+.modal-body{
+  border-radius:20px;
+}
+.modal-dialog{
+  	background-color:#F5F5F5;
+    border-radius:20px;
+}
+.modal-content{
+border-radius:20px;
+
+}
+.modal-footer{
+  align-items:center;
+  justify-content:center;
+  
+}
+
+.submit{
+  padding-left:10%;
+  padding-right:10%;
+}
+
+card{
+   color:#bbd7e8;
+}
+.courseheading{
+  font-size:50px;
+  text-align:center;
+
+}
+.coursesweprovide{
+   
+    background: #fff;
+    box-shadow: 0 5px 20px #bbcfff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 350px;
+    max-width: 100%;
+}
+/*icse */
+.icsebg{
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  height:100%;
+}
+.classes
+{
+  margin-top:100px;
+}
+
+div.transbox {
+  margin: 20px;
+
+  opacity: 0.6;
+}
+
+
+/*pricing*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 section {
-    padding: 20px;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 140px 0; 
+  
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.card {
+  position: relative;
+  min-width: 300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
 }
+.card:hover {
+  transform:scale(1.1);
+}
+.card_red, .card_red .title .fa {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+.card_violet, .card_violet .title .fa  {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+.card_three, .card_three .title .fa  {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+.price {
+  position: relative;
+  z-index: 2;
+}
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+.option {
+  position: relative;
+  z-index: 2;
+}
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+.card a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #2622ff;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto 0;
+  line-height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+}
+.card a:hover {
+  
+}
+
+
+
