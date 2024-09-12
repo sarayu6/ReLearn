@@ -1,49 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous">
+	</script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+	</script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<style>
+</style>
 
-    <section id="home">
-        <h2>Home Section</h2>
-        <p>This is the home section of the website.</p>
-    </section>
+<body onload="typeWriter();" data-spy="scroll" href=".navbar" data-offset="50">
+	<script src="script.js">
+	</script>
+	<nav class="navbar navbar-expand-md fixed-top navbar-light mb-5">
+		<!-- Brand -->
+		<a class="navbar-brand" href=""><img src="images/relearnlogo.png" height="35" width="80"></a>
+<!-- Toggler/collapsibe Button -->
+  <button class=" navbar-toggler navbar-toggler-icon btn" data-toggle="collapse" href="#collapsibleNavbar">
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <!-- navbar items -->
+  <ul class="navbar-nav ml-auto">
+    <!-- dropdown  -->
+  <li class="nav-item dropdown">
+   <a href="#" class="nav-link dropdown-toggle m-2" data-toggle="dropdown" ><b>About Re-Learn</b></a>
+   <div class="dropdown-menu bg-white">
+     <a class="dropdown-item" href="#about"><b>About Us</b></a>
+        <a class="dropdown-item" href="teach.html"><b>Teach With Us</b></a>
+        <a class="dropdown-item" href="#"><b>Our Blog</b></a>
+        <a class="dropdown-item" href="pricing.html"><b>Pricing</b></a>
+        <a class="dropdown-item" href="#"><b>FAQ</b></a>
+    </div>
+  </li>
+    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle m-2"data-toggle="dropdown"><b> Courses </b></a>
+    <div class="dropdown-menu bg-white text-black">
+      <a class="dropdown-item" href="icse.html"><b>ICSE</b></a>
+        <a class="dropdown-item" href="cbse.html"><b>CBSE</b></a>
+        <a class="dropdown-item" href="ssc.html"><b>SSC</b></a>
+        
+      </div>
+    </li>
+    <li class="nav-item">
+    <a href="#tutors" class="nav-link m-2"><b> Team </b></a></li>
+    <li class="nav-item">
+      
+  <button data-toggle="modal" href="#myModal" class="btn btn-outline-info m-2">Book a trial class</button>
+        </li>
+   
+    </ul>
+  </div>
+</nav>
+<!-- homepage  -->
+<div class="jumbotron text-center container-fluid img-bg">
+  <div class="row">
+    <div class="col-sm-6">
+<div class="lead thought text-center">
+    <h2 class="text m-3" >Your child can change the world...</h2>
+<p>Master concepts & learn real-world skills with Re-Learn's live online classes.</p>
+<p style="color:blue;text-align:left;font-weight:bolder;" class="m-3 p-2"><b>Grades 1 to 10</b></p>
 
-    <section id="about">
-        <h2>About Section</h2>
-        <p>Here you can learn more about this website.</p>
-    </section>
+<div class="coversection justify-content-center m-3">
+  <p class="abcdef"><b>What we cover</b></p>
+<div class="d-flex">
+<div class="m-2">
+<img src="https://www.lidolearning.com/images/maths-cover.png" class="img-fluid"/>
+<p style="color:black;font-size:15px;">Maths</p>
+</div>
+<div class="m-2">
+<img src="https://www.lidolearning.com/images/science-cover.png" class="img-fluid"/>
+<p style="color:black;font-size:15px;">Science</p>
+</div>
+<div class="m-2">
+<img src="https://www.lidolearning.com/images/english-cover.png" class="img-fluid"/>
+<p style="color:black;font-size:15px;">English</p>
+</div>
+<div class="m-2">
+<img src="https://www.lidolearning.com/images/coding-cover.png" class="img-fluid"/>
+<p style="color:black;font-size:15px;">Coding</p>
+</div>
+<div class=" m-2">
+<img src="https://www.lidolearning.com/images/social-cover.png" class="img-fluid"/>
+<p style="color:black;font-size:15px;">Social</p>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <div class="col-sm-6" >
+      <img src="images/abc.png" class="img-fluid"/>
+      <br>
+  
+      <i class="fa fa-child" style=" font-size:36px"></i><p style=" font-size:36px">8000+ Happy Students</p>
+      <button data-toggle="modal" href="#myModal" class="btn trial btn-info m-3 ">Book a Trial Class</button>
 
-    <section id="contact">
-        <h2>Contact Section</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    </div>
+    </div>
+  </div>
+  
 
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+<!--About Us-->
 
-    <script src="script.js"></script>
+<div class="row jumbotron" id="about">
+  <div class="col-sm-6 text-lg-left p-3">
+    <h1>About us</h1>
+    <p class="lead">We are a group of enthusiasts (certified graduates as well) who took initiative in establishing an educational academy having in mind all the difficulties we faced during our education. No more we want the same thing to be experienced by the students. So, we have come up with the best practices to make the learning process interesting and engaging and also to help students to get good grades in their Schooling which indeed leads to a strong foundation in the career as well.</p>
+  </div>
+   <div class="col-sm-6">
+    <img src="images/abt us.png" class="img-fluid ">
+    </div>
+
+
+
+<!--couses-->
+<p class="courseheading"><b> Boards that we provide</b></p>
+
+<div class="row" id="courses">
+  <div class="col m-5 coursesweprovide">
+    <center>
+  <h2>ICSE</h2>
+  <p class="m-3">Under this board, we are providing subjects like Maths, Science, Coding from grades 1 to 10. To know about the syllabus in detail click on explore.
+
+  </p>
+  </center>
+  <a href="icse.html" class="explore textbold" style="text-decoration:none; font-size:20px; text-align:right; color:blue;"><b>Explore 
+  <i class="fas fa-arrow-right fa-1x" style="color:blue;"></i></b>
+   </a>
+  </div>
+
+  <div class="col m-5 coursesweprovide">
+    <center>
+  <h2>CBSE</h2>
+  <p class="m-3">Under this board, we are providing subjects like Maths, Science, Coding from grades 1 to 10. To know about the syllabus in detail click on explore.</p>
+    </center>
+    <a href="cbse.html" class="explore textbold" style="text-decoration:none; font-size:20px; text-align:right; color:blue;"><b>Explore 
+      <i class="fas fa-arrow-right fa-1x" style="color:blue;"></i></b>
+      </a>
+  </div>
+
+<div class="col m-5 coursesweprovide">
+<h2><center>SSC</center></h2>
+ <p class="m-3">Under this board, we are providing subjects like Maths, Science, Coding from grades 1 to 10. To know about the syllabus in detail click on explore.</p>
+<a href="ssc.html" class="explore textbold" style="text-decoration:none; font-size:20px; text-align:right; color:blue;"><b>Explore 
+  <i class="fas fa-arrow-right fa-1x" style="color:blue;"></i></b></a>
+  </div>
+
+</div>
+
+<!--Showcasing  the tutors-->
+<div id="tutors" >
+  <b>
+<p id="txt" class="lead m-5" style="font-size:36px; text-align:center;"></p>
+</b>
+ <div class="lead row text-center ">
+
+
+   <div class="col tutor-info p-3">
+  <img src="images/mou.jpg" class="image img-fluid ">
+  <p class="lead"><b>Mounya Reddy</b></p>
+  <p class="lead font-16 colorgray">Bachelor of Electronics and Communication Engineering, MLR Institute Of Technology, Hyderabad.  </p>
+  </div>
+<div class="col tutor-info p-3">
+  <img src="images/sara.jpg" class="image img-fluid ">
+  <p class="lead"><b>Sarayu Reddy</b></p>
+  <p class="lead font-16 colorgray">Bachelor of Computer Science and Engineering, MLR Institute Of Technology, Dundigal, Hyderabad. </p>
+  </div>
+  <div class="col tutor-info p-3">
+  <img src="images/kavya.png" class="image img-fluid">
+  <p class="lead"><b> Kavya Sri</b></p>
+  <p class="lead font-16 colorgray">Bachelor of Electronics and Communication Engineering, MLR Institute Of Technology, Hyderabad.  </p>
+  </div>
+  <div class="col tutor-info p-3">
+  <img src="images/shiva.png" class="image img-fluid">
+  <p class="lead"><b>Shivani Reddy</b></p>
+  <p class="lead font-16 colorgray">Bachelor of Electronics and Communication Engineering , MLR Institute Of Technology, Hyderabad.  </p>
+  </div>
+  <div class="col tutor-info p-3">
+  <img src="images/vaish.png" class="image img-fluid">
+<p class="lead"><b>Vaishnavi Reddy</b></p>
+<p class="lead font-16 colorgray">Bachelor of Computer Science and Engineerning, MLR Institute Of Technology, Hyderabad. </p>
+</div>
+ </div>
+   </div>
+
+   
+  </div>
+
+ 
+ <section id="pricing">
+  <div class="container-fluid">
+    <div class="container">
+      <center>
+      <h1 style="font-family:'Abril Fatface'";><b>Start your child's 
+        <span style="color: blue">learning journey</span>
+         today</b></h1>
+      
+      <H2 style="font-family:'Abril Fatface'";  class="m-5">Use your classes for any subjects..!</h2>
+      </center>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card card_red text-center">
+            <div class="title">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <h2><b>Novoice</b></h2>
+            </div>
+            <div class="price" >
+              <h4><b> 70 <br> Classes</b></h4>
+            </div>
+            <div class="option" style="font-size:20px;">
+              <p><b>
+                <span style="color:white;">700 INR </span>
+                 per a class !
+                 </b>
+              </p>
+            </div>
+            
+           
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card card_violet text-center">
+            <div class="title">
+              <i class="fa fa-plane" aria-hidden="true"></i>
+              <h2><b>Master</b></h2>
+            </div>
+            <div class="price">
+              <h4><b>140 Classes</b></h4>
+            </div>
+            <div class="option" style="font-size:20px;">
+              <p><b>
+                <span style="color:white;">600 INR </span>
+                 per a class !
+                 </b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card card_three text-center">
+            <div class="title">
+              <i class="fa fa-rocket" aria-hidden="true"></i>
+              <h2><b>Super Star</b></h2>
+            </div>
+            <div class="price">
+              <h4><b>280 classes</b></h4>
+            </div>
+            <div class="option" style="font-size:20px;">
+              <p><b>
+                <span style="color:white;">500 INR </span>
+                 per a class !
+                 </b>
+              </p>
+            </div>
+          
+
+           
+          </div>
+        </div>
+        </div>
+    </div>
+      <center>
+           
+  <button data-toggle="modal" href="#myModal" class="btn btn-outline-info btn-lg m-5">Book a free demo</button>
+  </div>
+  <footer class="text-center justify-content-center m-2" style="background-color:#eeedff; margin-bottom:10px;">
+  <!--Font Awesome-->
+  <a href="#">
+  <i class="fab fa-facebook fa-2x m-3"></i></a>
+  <a href="#"><i class="fab fa-instagram fa-2x m-3"></i></a>
+  <a href="#"><i class="fab fa-twitter fa-2x m-3"></i></a>
+<a href="#"><i class="fab fa-linkedin fa-2x m-3"></i></a>
+  <p class="m-2">© Copyright 2021 Re-Learn</p>
+</footer> 
+</section>
+
+
+
+  <div class="modal fade lead pop" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Book your free trail class now!</h4>
+          <button class="btn close" data-dismiss="modal">X</button>
+        </div>  
+        <!-- Modal body -->
+        <div class="modal-body row">
+          <div class="col-sm-11">
+            <input type="text" id="Full Name" placeholder="Full Name" class="form-control m-2">
+          </div>
+          <br>
+          <div class="col-sm-11">
+            <input type="text" id="Email" placeholder="Email" class="form-control m-2">
+          </div>
+          <div class="col-sm-2">
+          <input type="text" name="countrycode" placeholder="Country Code"  value="+91" size="1" class="form-control m-1"> 
+          </div>
+          <div class="col-sm-9">
+
+<input type="text" name="mobilenumber" placeholder= "mobile number" size="12" class="form-control m-1 "/>   
+            </div>
+            <div class="col-sm-11 m-2">
+<select class="form-control">
+<option value="0">Select your Grade</option>
+<option value="1">Class 1</option>
+<option value="2">Class 2</option>
+<option value="3">Class 3</option>
+<option value="4">Class 4</option>
+<option value="5">Class 5</option>
+<option value="6">Class 6</option>
+<option value="7">Class 7</option>
+<option value="8">Class 8</option>
+<option value="9">Class 9</option>
+<option value="10">Class 10</option>    
+</select>
+</div>
+        </div>
+
+            </div>
+</div>
+      
+<center>
+<button class="btn btn-danger submit m-2" data-dismiss="modal">Book my class</button>
+    </center>  
+      </div>
+     
+   </div>
+ </div>
+
 </body>
 </html>
-
